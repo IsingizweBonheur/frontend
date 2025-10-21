@@ -41,7 +41,8 @@ import {
   faPalette,
   faMusic,
   faTheaterMasks,
-  faPhotoVideo
+  faPhotoVideo,
+  faGlobe
 } from '@fortawesome/free-solid-svg-icons';
 import { 
   faInstagram, 
@@ -468,7 +469,7 @@ export default function Homepage() {
   };
 
   const handleEmailBooking = (serviceType = "") => {
-    const email = profile.email || "isingizwebonheur@gmail.com";
+    const email = profile.email || "devperfection0@gmail.com";
     const subject = `Booking Inquiry - ${serviceType || 'Photography Session'}`;
     const body = `Hello ${profile.studioName || 'Dev Studio'} Team,
 
@@ -500,7 +501,7 @@ Best regards`;
   };
 
   const handleEmail = () => {
-    const email = profile.email || "isingizwebonheur@gmail.com";
+    const email = profile.email || "devperfection0@gmail.com";
     window.open(`mailto:${email}`);
   };
 
@@ -1140,7 +1141,7 @@ Best regards`;
                     </div>
                     <div>
                       <p className="font-semibold">Email Us</p>
-                      <p className="text-purple-100">{profile.email || 'isingizwebonheur@gmail.com'}</p>
+                      <p className="text-purple-100">devperfection0@gmail.com</p>
                     </div>
                   </div>
                   
@@ -1150,7 +1151,7 @@ Best regards`;
                     </div>
                     <div>
                       <p className="font-semibold">Call Us</p>
-                      <p className="text-purple-100">{profile.phone || '0795926508'}</p>
+                      <p className="text-purple-100">0795926508</p>
                     </div>
                   </div>
                   
@@ -1163,6 +1164,16 @@ Best regards`;
                       <p className="text-purple-100">Instant Booking & Support</p>
                     </div>
                   </div>
+
+                  <div className="flex items-center space-x-4 cursor-pointer group" onClick={() => window.open('https://devperfection.vercel.app/', '_blank')}>
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all group-hover:scale-110">
+                      <FontAwesomeIcon icon={faGlobe} />
+                    </div>
+                    <div>
+                      <p className="font-semibold">Visit Our Website</p>
+                      <p className="text-purple-100">devperfection.vercel.app</p>
+                    </div>
+                  </div>
                   
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -1170,7 +1181,7 @@ Best regards`;
                     </div>
                     <div>
                       <p className="font-semibold">Visit Our Studio</p>
-                      <p className="text-purple-100">{profile.address || '123 Creative Avenue, Studio City'}</p>
+                      <p className="text-purple-100">123 Creative Avenue, Studio City</p>
                     </div>
                   </div>
                   
@@ -1323,15 +1334,16 @@ Best regards`;
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center space-x-2 cursor-pointer group" onClick={handleEmail}>
                   <FontAwesomeIcon icon={faEnvelope} className="group-hover:text-white transition-colors" />
-                  <span className="group-hover:text-white transition-colors">{profile.email || 'isingizwebonheur@gmail.com'}</span>
+                  <span className="group-hover:text-white transition-colors">devperfection0@gmail.com</span>
                 </li>
-                <li className="flex items-center space-x-2 cursor-pointer group" onClick={handleCall}>
-                  <FontAwesomeIcon icon={faPhoneAlt} className="group-hover:text-white transition-colors" />
-                  <span className="group-hover:text-white transition-colors">{profile.phone || '0795926508'}</span>
-                </li>
+  
                 <li className="flex items-center space-x-2 cursor-pointer group" onClick={() => handleWhatsAppBooking()}>
                   <FontAwesomeIcon icon={faWhatsapp} className="group-hover:text-white transition-colors" />
                   <span className="group-hover:text-white transition-colors">WhatsApp Booking</span>
+                </li>
+                <li className="flex items-center space-x-2 cursor-pointer group" onClick={() => window.open('https://devperfection.vercel.app/', '_blank')}>
+                  <FontAwesomeIcon icon={faGlobe} className="group-hover:text-white transition-colors" />
+                  <span className="group-hover:text-white transition-colors">devperfection.vercel.app</span>
                 </li>
                 <li className="flex space-x-4 mt-3">
                   {[
@@ -1355,5 +1367,5 @@ Best regards`;
         </div>
       </footer>
     </div>
-  );
+  ); 
 }
