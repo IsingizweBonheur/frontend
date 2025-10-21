@@ -254,12 +254,6 @@ export default function Homepage() {
       category: "wedding"
     },
     {
-      id: 2,
-      url: "https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Garden Ceremony",
-      category: "wedding"
-    },
-    {
       id: 3,
       url: "https://images.unsplash.com/photo-1445452916036-9022dfd33aa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
       title: "Beach Wedding",
@@ -289,12 +283,6 @@ export default function Homepage() {
       id: 7,
       url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
       title: "Professional Headshot",
-      category: "portrait"
-    },
-    {
-      id: 8,
-      url: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
-      title: "Studio Portrait",
       category: "portrait"
     },
     {
@@ -403,12 +391,6 @@ export default function Homepage() {
       id: 25,
       url: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80",
       title: "Artistic Vision",
-      category: "creative"
-    },
-    {
-      id: 26,
-      url: "https://images.unsplash.com/photo-1545315007-7b489dc0c8d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Conceptual Art",
       category: "creative"
     },
     {
